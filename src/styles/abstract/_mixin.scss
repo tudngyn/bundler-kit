@@ -1,0 +1,32 @@
+@mixin absolute($top, $right, $bottom, $left) {
+  position: absolute;
+  top: $top;
+  right: $right;
+  bottom: $bottom;
+  left: $left;
+}
+
+@mixin title {
+  font-size: $font-size--md;
+  font-weight: 700;
+  margin: 0;
+}
+
+@mixin trim-content($lines, $line-height) {
+  display: -webkit-box;
+  -webkit-line-clamp: $lines;
+  -webkit-box-orient: vertical;
+  -o-text-overflow: ellipsis;
+  line-height: $line-height;
+  max-height: $lines * $line-height;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  min-height: $lines * $line-height;
+  word-break: break-word;
+}
+
+@mixin ellipsis() {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}

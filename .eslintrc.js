@@ -1,0 +1,50 @@
+module.exports = {
+  parser: 'babel-eslint',
+  parserOptions: {
+    ecmaVersion: 6,
+    sourceType: 'module',
+    ecmaFeatures: {
+      jsx: true,
+      modules: true,
+      experimentalObjectRestSpread: true,
+    },
+  },
+  env: {
+    browser: true,
+    node: true,
+    es6: true,
+  },
+  plugins: ['react'],
+  extends: ['eslint:recommended', 'plugin:react/recommended'],
+  rules: {
+    'comma-dangle': [1, 'always-multiline'],
+    'no-console': 1,
+    'no-unexpected-multiline': 'warn',
+    'arrow-body-style': ['error', 'as-needed'],
+    'no-console': ['error', { allow: ['log'] }],
+    'no-unused-vars': [
+      'warn',
+      { ignoreRestSiblings: false, args: 'after-used' },
+    ],
+    'react/jsx-uses-vars': 1,
+    'react/display-name': 1,
+    'react/jsx-no-duplicate-props': 1,
+    'react/jsx-max-props-per-line': 1,
+    'react/jsx-indent-props': [1, 1],
+    'react/no-direct-mutation-state': 1,
+    'react/no-multi-comp': 1,
+    'react/jsx-curly-spacing': 1,
+    'react/jsx-no-undef': 1,
+    'react/jsx-closing-bracket-location': 'off',
+    'no-debugger': 'warn',
+    'react/jsx-indent-props': [1, 2],
+    'react/prop-types': 1,
+    quotes: [1, 'single'],
+  },
+  settings: {
+    react: {
+      pragma: 'React',
+      version: '15.6.1',
+    },
+  },
+};

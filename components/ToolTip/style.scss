@@ -1,0 +1,51 @@
+$tooltip-color: #ce6161;
+
+@mixin tooltip {
+  width: 120px;
+  background-color: $tooltip-color;
+
+  &::after {
+    visibility: visible;
+  }
+}
+
+.tt-fs {
+  &-wrap {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted $tooltip-color;
+  }
+
+  & .tooltip-text {
+    color: #fff;
+    padding: 8px;
+    border-radius: 3px;
+    position: absolute;
+    top: -6px;
+    transform: translate3d(0, -100%, 0);
+    z-index: 1;
+    visibility: hidden;
+    // visibility: visible;
+
+    &::after {
+      visibility: hidden;
+      content: '';
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      margin-left: -5px;
+      border-width: 5px;
+      border-style: solid;
+      border-color: $tooltip-color transparent transparent transparent;
+    }
+  }
+
+  //   &:hover .tooltip-text {
+  //     @include tooltip();
+  //   }
+
+  &.sticky .tooltip-text {
+    visibility: visible;
+    @include tooltip();
+  }
+}

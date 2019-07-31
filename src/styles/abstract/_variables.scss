@@ -1,0 +1,97 @@
+$screenWidth-lg: 1190px;
+$breakpoint-screen-xs: 480px;
+$breakpoint-screen-sm: 568px;
+$breakpoint-screen-md: 768px;
+$breakpoint-screen-lg: 992px;
+$breakpoint-screen-xlg: 1200px;
+
+$white: #fff;
+$black: #000;
+$red: #e5101d;
+$red-light: #ff959c;
+$gray: #828282;
+$gainsboro: #e8e8e8;
+$ghost: #c7c7cd;
+$smoke: #f1f1f1;
+$orange: #f7941d;
+$blue: #4990e2;
+$blue-light: #84bdff;
+$green: #2db500;
+$green-light: #70c255;
+$purple-light: #ac89ff;
+
+$yellow: #f3a62e;
+$sky: #4099da;
+$dim-gray: #646464;
+$blue-light: #6dcff6;
+$blue-lite: #4990e2;
+/*Define brand color*/
+$brand-primary: $red;
+$brand-secondary: $orange;
+$brand-tertiary: $blue;
+$brand-quaternary: $green;
+$brand-success: $red;
+$brand-desc: $gray;
+$brand-warning: $red;
+$brand-danger: $red;
+
+/*Define font-size*/
+$font-small: 1.1rem;
+$font-medium: 1.4rem;
+$font-large: 1.6rem;
+
+/*Define font-weight*/
+$font-normal: 400;
+$font-bold: 500;
+
+/*Define line-height*/
+$line-height: 1.2;
+$line-height-large: 1.4;
+
+/*Define border*/
+$line-solid: 1px solid $gainsboro;
+$line-dotted: 1px dotted $gainsboro;
+$border: 1px solid $gainsboro;
+$border-secondary: 1px solid $ghost;
+
+/*Define border-radius*/
+$border-radius-small: 2px;
+$border-radius-medium: 3px;
+
+/*Define effect*/
+$transition-effect: 0.2s ease-in-out;
+
+/*Define text*/
+$text-color: #333;
+$text-color-placeholder: $ghost;
+$text-color-inverse: $white;
+
+/*Define background-color*/
+$bgd-primary: $smoke;
+$bgd-block: $white;
+
+/*Define space*/
+$space-small: 0.3rem;
+$space-medium: 0.6rem;
+$space-xmedium: 0.9rem;
+$space-large: 1.2rem;
+$space-xlarge: 2.4rem;
+$space-xxlarge: 3.2rem;
+$space-huge: 3.6rem;
+$space-mhuge: 4.2rem;
+$space-xhuge: 4.8rem;
+
+/*Define box-shadow*/
+$box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2);
+$box-shadow-reverse: 0px -1px 3px 0px rgba(0, 0, 0, 0.2);
+
+/*Define z-index*/
+$zindex-negative: -1;
+$zindex-lv-1: 1;
+$zindex-lv-2: 2;
+$zindex-lv-3: 3;
+$zindex-lv-4: 4;
+$zindex-fixed: 10;
+$zindex-highest: 9999;
+
+$image-bg: url(https://media3.scdn.vn/img2/2018/7_3/NJB68c.png);

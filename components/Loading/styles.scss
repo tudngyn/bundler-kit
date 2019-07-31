@@ -1,0 +1,72 @@
+.flash-sale-loading {
+  // position: absolute;
+  // top: 45%;
+  // left: 50%;
+  // padding: 10px 0;
+  // display: flex;
+  // align-items: center;
+  // justify-content: center;
+  // padding: 25px 0;
+
+  // &--center {
+  //   display: flex;
+  //   align-items: center;
+  //   justify-content: center;
+  // }
+
+  // &__wrap {
+  //   background: #fff;
+  //   border-radius: 50%;
+  //   padding: 3px;
+  //   box-sizing: border-box;
+  // }
+
+  // &__icon {
+  //   display: block;
+  //   width: 35px;
+  //   height: 35px;
+  //   border: 1px solid $red;
+  //   border-radius: 50%;
+  //   border-top-color: rgba(0, 0, 0, 0);
+  //   border-left-color: rgba(0, 0, 0, 0);
+  //   animation: spin 600ms infinite linear;
+  // }
+
+  // @keyframes spin {
+  //   0% {
+  //     transform: rotate(0deg);
+  //   }
+
+  //   100% {
+  //     transform: rotate(360deg);
+  //   }
+  // }
+  span {
+    height: 18px;
+    border-right: 4px solid $red;
+    margin: 0 4px;
+    display: inline-block;
+    border-radius: 15px;
+    opacity: 0.8;
+    transform: translateY(5px);
+  }
+
+  span:nth-child(1) {
+    animation: jumping 0.4s ease 0s infinite alternate;
+  }
+  span:nth-child(2) {
+    animation: jumping 0.4s ease 0.05s infinite alternate;
+  }
+  span:nth-child(3) {
+    animation: jumping 0.4s ease 0.1s infinite alternate;
+  }
+
+  @keyframes jumping {
+    from {
+      transform: translateY(5px);
+    }
+    to {
+      transform: translateY(-5px);
+    }
+  }
+}
