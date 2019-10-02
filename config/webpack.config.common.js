@@ -35,7 +35,7 @@ module.exports = {
         enforce: 'pre',
         test: /\.js$/,
         exclude: /node_modules/,
-        use: ['eslint-loader'],
+        use: [require.resolve('eslint-loader')],
       },
       {
         test: /\.(png|jpg|gif)$/i,

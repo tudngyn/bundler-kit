@@ -39,14 +39,21 @@ module.exports = {
           {
             loader: require.resolve('babel-loader'),
             options: {
-              presets: ['@babel/preset-env', '@babel/preset-react'],
+              presets: [
+                require.resolve('@babel/preset-env')
+                , 
+                require.resolve('@babel/preset-react')
+              ],
               plugins: [
                 [
-                  '@babel/plugin-transform-modules-commonjs',
+                  require.resolve('@babel/plugin-transform-modules-commonjs')
+                  ,
                   { strictMode: false },
                 ],
-                '@babel/plugin-transform-runtime',
-                '@babel/plugin-proposal-class-properties',
+                require.resolve('@babel/plugin-transform-runtime')
+                ,
+                require.resolve('@babel/plugin-proposal-class-properties')
+                ,
               ],
             },
           },
