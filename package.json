@@ -55,7 +55,7 @@
     "react-addons-css-transition-group": "^15.6.2",
     "react-countup": "^4.1.1",
     "react-day-picker": "^7.3.0",
-    "react-dev-utils": "^9.0.1",
+    "react-dev-utils": "^11.0.4",
     "react-dev-utils-for-webpack4": "^5.0.0-webpack4",
     "react-dom": "^16.8.6",
     "react-horizontal-scrolling-menu": "^0.6.12",
